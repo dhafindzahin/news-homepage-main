@@ -79,6 +79,12 @@ h6 {
 	font-family: inter;
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
 	padding: 0 16px;
 	display: grid;
@@ -89,6 +95,7 @@ h6 {
 		"main"
 		"sidebar"
 		"article";
+	max-width: 1440px;
 }
 
 .nav-container {
@@ -317,7 +324,7 @@ h6 {
 	.wrapper {
 		padding: 16px 100px;
 		grid-template-columns: 2.5fr 1fr;
-		grid-template-rows: 1fr 4fr 2fr;
+		grid-template-rows: 0.5fr 4fr 2fr;
 		grid-template-areas:
 			"header header"
 			"main sidebar"
